@@ -66,13 +66,16 @@
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <!--IE不相容
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>!-->
+	<!--
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	!-->
 	<script type="text/javascript" src="http://www.designring.com.tw/generic.js"></script>
 	<script>
 		var svr_err = "伺服器忙碌中,請稍後重試!";
 		var page = HttpContext.Current.Handler as Page;
     	page.ClientScript.RegisterClientScriptBlock(page.GetType(), "js", func, true);
+		alert(svr_err);
 		function blockui(opt) {
 			switch(opt){
 				case 'in':
