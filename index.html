@@ -222,6 +222,7 @@
 					jsonp:"mycallback",
 					success: function(data){
 					    $('#showarea').data('industry',data);
+						alert('Load industry successed !');
 					},
 					error: function(){alert(svr_err);}
 				});
