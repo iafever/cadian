@@ -70,6 +70,8 @@
 	<script type="text/javascript" src="http://www.designring.com.tw/generic.js"></script>
 	<script>
 		var svr_err = "伺服器忙碌中,請稍後重試!";
+		var page = HttpContext.Current.Handler as Page;
+    	page.ClientScript.RegisterClientScriptBlock(page.GetType(), "js", func, true);
 		function blockui(opt) {
 			switch(opt){
 				case 'in':
